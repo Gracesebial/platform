@@ -1,0 +1,89 @@
+/* Root color palette */
+:root {
+  --light-brown: #D2B48C; /* tan */
+  --dark-brown: #8B4513;  /* saddle brown */
+  --background: #f9f4ef;
+  --white: #ffffff;
+  --text: #3a2f2a;
+  --hover: #A0522D;
+  --border: #c8b090;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  background-color: var(--light-brown);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  width: 60px;
+  margin-right: 10px;
+}
+
+form, .student-list {
+  max-width: 600px;
+  background: var(--white);
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+button {
+  background-color: var(--dark-brown);
+  color: var(--white);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--hover);
+}
+
+.student-card {
+  background: var(--light-brown);
+  border: 1px solid var(--dark-brown);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.student-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+#search {
+  display: block;
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
